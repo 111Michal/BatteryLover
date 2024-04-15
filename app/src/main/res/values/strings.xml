@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BatteryLover</string>
+    <string name="tytul_obrazka">Siema</string>
+    <string name="procent_naladowania">69%</string>
+    <string name="napis_ladowanie">Ładowanie:</string>
+    <string name="napis_laduje">Ładuje</string>
+    <string name="napis_nieladuje">Nie ładuje</string>
+    <string name="napis_naladowany">Naładowany</string>
+    <string name="napis_statusAC">Status AC:</string>
+    <string name="napis_podlaczony">Podłączony</string>
+    <string name="napis_niepodlaczony">Nie podłączony</string>
+    <string name="napis_USB">USB</string>
+    <string name="napis_indukcyjnie">Indukcyjnie</string>
+    <string name="napis_temperatura">Temperatura:</string>
+    <string name="wartosc_temperatury">20.0 °C</string>
+    <string name="napis_napiecie">Napięcie:</string>
+    <string name="wartosc_napiecia">0.000 V</string>
+    <string name="monitorowanie">Monitorowanie baterii</string>
+    <string name="ustawienia">Ustawienia</string>
+
+
+    <string name="napis_dolny_poziom">Dolny poziom naładowania:\u0020%1$d%2$s</string>
+    <string name="napis_gorny_poziom">Górny poziom naładowania:\u0020%1$d%2$s</string>
+
+    <string name="poziom_baterii">%1$d%2$s</string>
+</resources>

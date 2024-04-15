@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/zdjecie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/tytul_obrazka"
+            android:maxHeight="280dp"
+            android:maxWidth="304dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/medium_battery" />
+
+
+        <TextView
+            android:id="@+id/poziomBaterii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zdjecie"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/procent_naladowania"
+            android:textSize="16pt" />
+
+        <LinearLayout
+            android:id="@+id/pierwszyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/poziomBaterii"
+
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/napisLadowanie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/napis_ladowanie"
+
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/ladowanie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+
+                android:text="@string/napis_laduje"
+
+                android:textSize="12pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/drugiLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pierwszyLayout"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/napisStatusAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/napis_statusAC"
+
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/statusAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginStart="20dp"
+                android:text="@string/napis_podlaczony"
+
+
+                android:textSize="12pt" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/trzeciLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drugiLayout"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/napisTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/napis_temperatura"
+
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/temperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+
+                android:text="@string/wartosc_temperatury"
+
+
+                android:textSize="12pt" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/czwartyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trzeciLayout"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/napisNapiecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/napis_napiecie"
+
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/napiecie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+
+                android:text="@string/wartosc_napiecia"
+
+
+                android:textSize="12pt" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/hejo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/czwartyLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchPowiadomienia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                />
+
+            <TextView
+                android:id="@+id/napisPowiadomienia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/monitorowanie"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/przyciskUstawienia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hejo"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="10dp"
+            android:enabled="true"
+            android:onClick="otworzPowiadomienia"
+            android:text="@string/ustawienia" />
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

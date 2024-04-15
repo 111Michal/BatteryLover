@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Powiadomienia">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/napisPoziomDolny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Dolny poziom naładowania: 50%"
+
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/poziomDolny"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/napisPoziomDolny"
+            android:layout_centerVertical="true"
+            android:max="20"
+            android:progress="10"
+
+            />
+
+        <TextView
+            android:id="@+id/napisGornyPoziom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poziomDolny"
+            android:layout_centerHorizontal="true"
+            android:text="Górny poziom naładowania: 90%"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/poziomGorny"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/napisGornyPoziom"
+            android:layout_centerVertical="true"
+            android:max="20"
+            android:progress="18"
+
+            />
+
+        <Button
+            android:id="@+id/zarzadzajPowiadomieniami"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poziomGorny"
+            android:layout_marginTop="50dp"
+            android:onClick="otworzUstawienia"
+            android:text="Zarządzaj powiadomieniami" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/zapisz"
+            android:layout_below="@+id/zarzadzajPowiadomieniami"
+            android:text="Zapisz zmiany"
+            android:layout_marginTop="50dp"
+            android:onClick="zapis"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
